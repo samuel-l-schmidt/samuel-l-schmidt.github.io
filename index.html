@@ -1,23 +1,24 @@
-<!<!DOCTYPE html>
-<<!DOCTYPE html>
-<html lang="de" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Samuels Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
   <body>
 
+
     <!---Header--->
     <header>
-      <h1>Samuel L. Schmidt</h1>
-      <nav>
-        <ul>
-          <li><a href="#intro">Start</a></li>
-          <li><a href="#aboutMe">Was ich mache</a></li>
-          <li><a href="#bio">Wer ich bin</a></li>
-          <li><a href="#work">Meine bisherige Arbeit</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+          <a href="#intro" class="active">Start</a>
+          <a href="#aboutMe">Was ich mache</a>
+          <a href="#bio">Wer ich bin</a>
+          <a href="#work">Meine bisherige Arbeit</a>
+          <a href="#contact">Kontakt</a>
+          <a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()"><i class="fa fa-bars"></i></a>
       </nav>
     </header>
 
@@ -73,11 +74,19 @@
         </section>
 
         <!-- Footer -->
-        <section>
+        <section id="footer">
           <ul>
             <!-- Icons für Social Media -->
+            <a> </a>
           </ul>
+
+
           <!-- Menü für Abschnitte der Seite -->
+            <a href="#intro">Start</a>
+            <a href="#aboutMe">Was ich mache</a>
+            <a href="#bio">Wer ich bin</a>
+            <a href="#work">Meine bisherige Arbeit</a>
+            <a href="#contact">Kontakt</a>
           <!-- evtl Link zu Impressum -->
         </section>
 
