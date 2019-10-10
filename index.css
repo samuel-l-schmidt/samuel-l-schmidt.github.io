@@ -1,3 +1,16 @@
+/* General */
+body{
+  margin: 0px;
+}
+section{
+  text-align: center;
+  display: block;
+
+}
+
+
+
+
 /* top navigation */
 
 .topnav{
@@ -6,9 +19,7 @@
 }
 .topnav a {
   float: left;
-  display: block;
   color: black;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -56,7 +67,40 @@
   }
 }
 
-/* Intro */
+
+
+#intro{
+  padding: 20%;
+  color: white;
+  background-color: #39454b;
+}
+
+
+
+#aboutMe{
+  padding: 20%;
+  color: white;
+  background-color: #39454b;
+}
+
+
+#bio{
+  padding: 20%;
+  color: white;
+  background-color: #39454b;
+}
+
+#work{
+  padding: 20%;
+  color: white;
+  background-color: #39454b;
+}
+
+#contact {
+  padding: 20%;
+  color: white;
+  background-color: #39454b;
+}
 
 /* footer */
 #footer{
