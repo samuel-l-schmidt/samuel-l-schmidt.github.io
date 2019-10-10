@@ -5,11 +5,9 @@ body{
 section{
   text-align: center;
   display: block;
+  padding: 20%;
 
 }
-
-
-
 
 /* top navigation */
 
@@ -70,8 +68,8 @@ section{
 
 
 #intro{
+  font-size: 150%;
   position:relative;
-  padding: 20%;
   color: white;
   background-color: #39454b;
 }
@@ -91,7 +89,6 @@ section{
 
 
 #aboutMe{
-  padding: 20%;
   color: white;
   background-color: #39454b;
 }
@@ -110,7 +107,6 @@ section{
 }
 
 #contact {
-  padding: 20%;
   color: white;
   background-color: #39454b;
 }
