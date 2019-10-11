@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Samuels Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
   </head>
@@ -18,7 +17,8 @@
           <a href="#bio">Wer ich bin</a>
           <a href="#work">Meine bisherige Arbeit</a>
           <a href="#contact">Kontakt</a>
-          <a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()"><i class="fa fa-bars"></i></a>
+          <a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">
+             <ion-icon name="menu"></ion-icon></a>
       </nav>
     </header>
 
@@ -72,15 +72,23 @@
               <h2>Kontakt.</h2>
               <p>Alle Möglichkeiten mit mir mal ins Gespräch zu kommen.</p>
             </header>
-          <!-- Hier wird dann das Formular sein, zum Schreiben einer E-mail -->
+            <ul class="social-media-list">
+                 <li>
+                     <a href="https://www.instagram.com/samuel.l.schmidt">
+                         <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="https://github.com/samuel-l-schmidt">
+                         <ion-icon class="logo-github" name="logo-github"></ion-icon>
+                     </a>
+                 </li>
+             </ul>
         </section>
 
         <!-- Footer -->
         <section id="footer">
-          <ul>
-            <!-- Icons für Social Media -->
-            <a> </a>
-          </ul>
+
 
 
           <!-- Menü für Abschnitte der Seite -->
@@ -91,6 +99,8 @@
             <a href="#contact">Kontakt</a>
           <!-- evtl Link zu Impressum -->
         </section>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
   </body>
 </html>
