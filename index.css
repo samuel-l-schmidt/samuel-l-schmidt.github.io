@@ -8,12 +8,18 @@ section{
   padding: 20%;
 
 }
+* {
+  box-sizing: border-box;
+}
+
 
 /* top navigation */
 
 .topnav{
+  width: 100%;
+  background-color: white;
   overflow: hidden;
-  background: rgb(0,0,0,0.1);
+
 }
 .topnav a {
   float: left;
@@ -26,8 +32,8 @@ section{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #39454b;
-  color: white;
+  background-color: rgb(169,169,169);
+  color: black;
 }
 
 /* Add an active class to highlight the current page */
@@ -72,7 +78,10 @@ section{
   position:relative;
   color: white;
   background-color: #39454b;
+
 }
+
+
 
 #arrow{
   position: absolute;
@@ -88,17 +97,162 @@ section{
 
 
 
+
 #aboutMe{
   color: white;
   background-color: #39454b;
+  display: flex;
+  font-size: 26px;
 }
+
+div.gallery{
+  float: left;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('steve-halama-Yhc7YGZlz3g-unsplash.jpg');
+}
+div.desc{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+
+  div.gallery{
+    display: none;
+  }
+
+}
+
 
 
 #bio{
-  padding: 20%;
+  padding: 10%;
+  text-align: center;
   color: white;
   background-color: #39454b;
 }
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 6px solid rgb(70,130,180);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  color: black;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+  color: black;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+  left: 15px;
+  }
+  .right {
+  left: 0%;
+  }
+}
+
 
 #work{
   padding: 20%;
@@ -136,19 +290,14 @@ section{
   border: 0;
   margin: 0;
   line-height: 1em;
-  padding: 1.5em;
-  background: rgb(0,0,0,0.1);
-  color: black;
+ padding: 5%;
   overflow: hidden;
 }
 
 #footer a{
-  float: left;
-  display: block;
   color: black;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 14px 16px;
   font-size: 17px;
 }
 
