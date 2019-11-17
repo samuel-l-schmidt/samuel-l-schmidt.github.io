@@ -1,6 +1,7 @@
 /* General */
 body{
   margin: 0px;
+  font-family: Roboto;
 }
 section{
   text-align: center;
@@ -48,7 +49,7 @@ section{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -57,7 +58,7 @@ section{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -99,38 +100,116 @@ section{
 
 
 #aboutMe{
+  padding: 20px;
   color: white;
   background-color: #39454b;
-  display: flex;
+  display: grid;
+  grid-template-rows: 500px 1fr;
+  grid-template-columns:50% 50%;
   font-size: 26px;
 }
 
-div.gallery{
-  float: left;
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url('steve-halama-Yhc7YGZlz3g-unsplash.jpg');
-}
-div.desc{
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px;
-  width: 50%;
-}
-@media screen and (max-width: 600px) {
 
-  div.gallery{
-    display: none;
+div.desc{
+  padding-left: 30px;
+
+}
+
+
+  @media screen and (max-width: 950px) {
+    #aboutMe {
+
+      grid-template-columns:100%;
+
+    }
   }
 
+
+
+
+}
+.skills {
+    width: 500px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.skills h3{
+  padding-left: 20px;
 }
 
+.skills li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
 
+}
+
+.skills li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, .5);
+    border-radius: 1000px;
+}
+
+.skills li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.cpp:after {
+    animation-name: cpp;
+}
+
+@keyframes cpp {
+    to {
+        width: 65%;
+    }
+}
+
+li.office:after {
+    animation-name:office;
+}
+
+@keyframes office {
+    to {
+        width: 70%;
+    }
+}
+
+li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 75%;
+    }
+}
+
+li.r:after {
+    animation-name: r;
+}
+
+@keyframes r {
+    to {
+        width: 30%;
+    }
+}
+
+/****** aboutMe Ende*******/
 
 #bio{
   padding: 10%;
