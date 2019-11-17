@@ -13,13 +13,14 @@ section{
   box-sizing: border-box;
 }
 
-
 /* top navigation */
 
 .topnav{
   width: 100%;
+  z-index: 9999;
   background-color: white;
-  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
 
 }
 .topnav a {
@@ -79,11 +80,7 @@ section{
   position:relative;
   color: white;
   background-color: #39454b;
-
 }
-
-
-
 #arrow{
   position: absolute;
   bottom: 0;
@@ -94,10 +91,6 @@ section{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-
-
-
 
 #aboutMe{
   padding: 20px;
@@ -338,7 +331,6 @@ li.r:after {
   color: white;
   background-color: #39454b;
 }
-
 #contact {
   color: white;
   background-color: #39454b;
