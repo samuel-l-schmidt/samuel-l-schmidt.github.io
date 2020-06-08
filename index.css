@@ -1,388 +1,65 @@
-/* General */
 body{
-  margin: 0px;
+  background-color: black;
+  color: gainsboro;
   font-family: Roboto;
+  font-size: x-large;
 }
-section{
-  text-align: center;
-  display: block;
-  padding: 20%;
 
-}
-* {
+
+button{
+  background-color: black;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #CCCCCC;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
   box-sizing: border-box;
-}
-
-/* top navigation */
-
-.topnav{
-  width: 100%;
-  z-index: 9999;
-  background-color: white;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-
-}
-.topnav a {
-  float: left;
-  color: black;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-weight: 300;
+  color: gainsboro;
+  text-align: center;
+  transition: all 0.2s;   
 }
 
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgb(169,169,169);
+button:hover{
+  background-color: white;
   color: black;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: rgb(70,130,180);
-  color: white;
-}
+@media all and (max-width:100em){
+   button{
+      display: block;
+      margin: 0.4em auto;}
+  } 
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+#firstButton {
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+#secondButton {
+  display: none;
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-
-
-#intro{
-  font-size: 150%;
-  position:relative;
-  color: white;
-  background-color: #39454b;
-}
-#arrow{
+#button {
   position: absolute;
-  bottom: 0;
-  border: solid white;
-  border-width: 0 10px 10px 0;
-  display: inline-block;
-  padding: 10px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-#aboutMe{
-  padding: 20px;
-  color: white;
-  background-color: #39454b;
-  display: grid;
-  grid-template-rows: 500px 1fr;
-  grid-template-columns:50% 50%;
-  font-size: 26px;
-}
-
-
-div.desc{
-  padding-left: 30px;
-
-}
-
-
-  @media screen and (max-width: 950px) {
-    #aboutMe {
-
-      grid-template-columns:100%;
-
-    }
-  }
-
-
-
-
-}
-.skills {
-    width: 500px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.skills h3{
-  padding-left: 20px;
-}
-
-.skills li {
-    position: relative;
-    list-style: none;
-    margin: 50px 0;
-
-}
-
-.skills li:before {
-    content: "";
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    width: 100%;
-    height: 15px;
-    background-color: rgba(54, 126, 223, .5);
-    border-radius: 1000px;
-}
-
-.skills li:after {
-    content: "";
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    width: 0;
-    height: 15px;
-    background-color: rgba(54, 126, 223, 1);
-    border-radius: 1000px;
-    animation-duration: .7s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-
-li.cpp:after {
-    animation-name: cpp;
-}
-
-@keyframes cpp {
-    to {
-        width: 65%;
-    }
-}
-
-li.office:after {
-    animation-name:office;
-}
-
-@keyframes office {
-    to {
-        width: 70%;
-    }
-}
-
-li.js:after {
-    animation-name: js;
-}
-
-@keyframes js {
-    to {
-        width: 75%;
-    }
-}
-
-li.r:after {
-    animation-name: r;
-}
-
-@keyframes r {
-    to {
-        width: 30%;
-    }
-}
-
-/****** aboutMe Ende*******/
-
-#bio{
-  padding: 10%;
-  text-align: center;
-  color: white;
-  background-color: #39454b;
-}
-
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
+  top: 85%;
   left: 50%;
-  margin-left: -3px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
 
-.container::after {
-  content: '';
+#text{
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 6px solid rgb(70,130,180);
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
+  top: 50%;
   left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
+#particles-js{
   position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  color: black;
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-@media screen and (max-width: 600px) {
-  .timeline::after {
-  left: 31px;
-  }
-  .container {
-  color: black;
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-  .left::after, .right::after {
-  left: 15px;
-  }
-  .right {
-  left: 0%;
-  }
-}
-
-
-#work{
-  padding: 20%;
-  color: white;
-  background-color: #39454b;
-}
-#contact {
-  color: white;
-  background-color: #39454b;
-}
-.social-media-list {
-    list-style: none;
-}
-.social-media-list li {
-    display: inline-block;
-    margin-right: 1em;
-    font-size: 380%;
-}
-.social-media-list li a {
-    color: #888;
-    transition: color 0.5s;
-}
-.logo-instagram:hover {
-    color: #517fa4
-}
-
-.logo-github:hover {
-    color: #6cc644
-}
-
-/* footer */
-#footer{
-  position: relative;
-  border: 0;
-  margin: 0;
-  line-height: 1em;
- padding: 5%;
-  overflow: hidden;
-}
-
-#footer a{
-  color: black;
-  text-decoration: none;
-  padding: 14px 16px;
-  font-size: 17px;
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  #footer {position: relative;}
-  #footer a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #footer a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
+  height: 100%;
+  z-index: -1;
 }

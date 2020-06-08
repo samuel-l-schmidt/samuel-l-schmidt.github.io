@@ -1,139 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Samuels Website</title>
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="index.css" />
+
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });</script>
   </head>
-  <body>
 
-
-    <!---Header--->
-    <header>
-      <nav class="topnav" id="myTopnav">
-          <a href="#intro" class="active">Start</a>
-          <a href="#aboutMe">Was ich mache</a>
-          <a href="#bio">Wer ich bin</a>
-          <a href="#work">Meine bisherige Arbeit</a>
-          <a href="#contact">Kontakt</a>
-          <a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">
-             <ion-icon name="menu"></ion-icon></a>
-      </nav>
-    </header>
-
-    <!---Intro--->
-
-    <section id="intro">
-        <header>
-          <h2>Willkommen</h2>
-          <p>Ein kleiner Einblick,
-          wer hinter Samuel Schmidt steckt</p>
-          </header>
-          <a id = "arrow"> </a>
-
-    </section>
-
-    <!---aboutMe--->
-
-      <div id="aboutMe" class="row">
-        <div class="skills">
-          <h3> Skills </h3>
-            <ul>
-              <li class="cpp">C++</li>
-              <li class="office">Ms office</li>
-              <li class="js">JavaScript</li>
-              <li class="r">R</li>
-            </ul>
-          </div>
-          <div class="desc">
-           <h3> Über mich</h3>
-            <p>Ich bin Student der Wirtschaftsinformatik an der Universtität Leipzig.</p>
-
-            <p>Warum Wirtschaftsinformatik? Ich habe damals unter anderem das Buch "Digital Disruptions"
-            gelesen. Wie neue Technologien bestehende Prozesse, Unternehmen und ganze Gesellschaften
-            verändern, finde ich immer noch sehr faszinierend.
-            Abgesehen davon bin ich auch sehr politikinteressiert und mag Tiere :D.</p>
-
-            <p> Meine "Skills" sollte man natürlich relativ betrachten... immerhin studiere ich erst seit einem Jahr. </p>
-
-          </header>
-        </div>
-            <!-- Vielleicht Links (nochmal) zu Social Media -->
-      </div>
-
-      <!--- bio -->
-      <div id="bio">
-          <header>
-            <h3>Wer ich bin</h3>
-          </header>
-        <div class="timeline">
-          <div class="container left">
-            <div class="content">
-              <h2>Juli 2018</h2>
-              <p> Ich hab mein Abitur und damit meine Schulzeit abgeschlossen</p>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h2> September 2018</h2>
-              <p>Studiumsbeginn an der Uni Leipzig im Bachelor Wirtschaftsinformatik</p>
-            </div>
-          </div>
-          <div class="container left">
-            <div class="content">
-              <h2> Oktober 2019</h2>
-              <p>freeCodeCamp "JavaScript Algortithms & Data Structures" Bootcamp abgeschlossen</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Work--->
-        <section id="work" class="main style3 primary">
-            <header>
-              <h3>Meine Arbeiten</h3>
-              <p> wird noch ausgefüllt :D  </p>
-            </header>
-            <!-- Hier kommt am besten eine Art Gallery rein mit Icons von verschieden Projekten -->
-        </section>
-
-      <!-- Contact -->
-        <section id="contact">
-            <header>
-              <h3>Kontakt.</h3>
-              <p>Für mehr Infos :D</p>
-            </header>
-            <ul class="social-media-list">
-                 <li>
-                     <a href="https://www.instagram.com/samuel.l.schmidt">
-                         <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-                     </a>
-                 </li>
-                 <li>
-                     <a href="https://github.com/samuel-l-schmidt">
-                         <ion-icon class="logo-github" name="logo-github"></ion-icon>
-                     </a>
-                 </li>
-             </ul>
-        </section>
-
-        <!-- Footer -->
-        <section id="footer">
-
-
-
-          <!-- Menü für Abschnitte der Seite -->
-            <a href="#intro">Start</a>
-            <a href="#aboutMe">Was ich mache</a>
-            <a href="#bio">Wer ich bin</a>
-            <a href="#work">Meine bisherige Arbeit</a>
-            <a href="#contact">Kontakt</a>
-          <!-- evtl Link zu Impressum -->
-        </section>
-
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-  </body>
+  <body onload="slowTextWriter()">
+    <div id="particles-js"> 
+      <p id="text"></p>
+      <div id="button">
+        <button id="firstButton" >Genau!</button>
+        <button id="secondButton" >Das war ja auch nicht schwer zu erraten</button>
+     </div>
+   </div>
+ </body>
 </html>
