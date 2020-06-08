@@ -6,15 +6,15 @@ var text1 = 'Ich weiß was du hier willst ... nämlich mehr über Samuel Schmidt
 var answer11 = 'Genau !';
 var answer12 = 'Das war ja jetzt auch nicht wirklich schwer.';
 
-var text11 = 'Freut mich! Die Faszination, wie Technologien Unternehmen und ganze Gesellschaften verändern können, führten zur Wirtschaftsinformatik. Als Selbstarter setzt er seine eigenen Ideen um. Andere Interessen sind Politik und Biologie, außerdem spielt er gerne Tennis oder geht Inlineskaten.';
+var text11 = 'Freut mich! Die Faszination, wie Technologien Unternehmen und ganze Gesellschaften verändern können, führten zur Wirtschaftsinformatik. Aus eigenem Antrieb setzt er seine Ideen und Projekte um, zum Beispiel diese Website ;). Andere Interessen sind Politik und Biologie, außerdem spielt er gerne Tennis oder geht Inlineskaten.';
 var answer111 = 'Schön und gut. Aber was soll diese Website?';
 var answer112 = 'Wirtschaftsinformatik? Puhh';
 
-var text1121 = 'Ich finde neue Technologien einfach faszinierend. Außerdem macht es mir Spaß Prozesse zu optimieren.'
-var answer11211 = ' Zum Beispiel? '
+var text112 = 'Ich finde neue Technologien einfach faszinierend. Außerdem macht es mir Spaß Prozesse zu optimieren.'
+var answer1121 = ' Zum Beispiel? '
 
-var text11211 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Karteikarten zum Beispiel sind sehr effektiv, allerdings bleiben Zusammenhänge auf der Strecke. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Mit meinem Programmm kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. So kann man langfristig eine Wissensbasis aufbauen. ';
-var answer1121 = 'Cool. Lass uns in Persona einmal darüber sprechen. ';
+var text1121 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Karteikarten zum Beispiel sind sehr effektiv, allerdings bleiben Zusammenhänge auf der Strecke. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Mit meinem Programmm kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. So kann man langfristig eine Wissensbasis aufbauen. ';
+var answer11211 = 'Cool. Lass uns in Persona einmal darüber sprechen. ';
 
 var text111 = 'Nun, ich gehe davon aus, dass du meinen Lebenslauf schon kennst. Warum soll ich also nochmal das Bekannte aufzählen. Vermutlich bist du hier, um zu sehen, ob ich 1. technisches etwas kann und 2. wie ich menschlich so bin. Dafür bietet sich dieser "Chatbot" an.';
 var answer1111 = 'Menschlich? Naja ob man das hier schon feststellen kann...';
@@ -31,7 +31,7 @@ var text1111 = 'Wahrscheinlich nicht. Am besten wir lernen uns im persönlichen 
 var text12 = 'Stimmt. Viele Antwortmöglichkeiten hattest du ja auch nicht ';
 var answer121 = 'Haha...';
 
-var text1212 = 'Vieleicht wäre es besser, wenn wir uns persönlich kennenlernen.';
+var text121 = 'Vieleicht wäre es besser, wenn wir uns persönlich kennenlernen.';
 
 
 var TextWriter = function(text_count) {
