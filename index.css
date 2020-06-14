@@ -25,11 +25,17 @@ button:hover{
   color: black;
 }
 
-@media all and (max-width:100em){
-   button{
+@media all and (max-width:500px){
+   body{
+    font-size: medium;
+   }
+   #button{
       display: block;
-      margin: 0.4em auto;}
-  } 
+      margin: 0.4em auto;
+    }
+
+    }
+  
 
 #firstButton {
   display: none;
@@ -50,7 +56,7 @@ button:hover{
 
 #text{
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
