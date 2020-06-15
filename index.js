@@ -13,8 +13,8 @@ var answer112 = 'Wirtschaftsinformatik? Puhh';
 var text112 = 'Ich finde neue Technologien einfach faszinierend. Außerdem macht es mir Spaß Prozesse zu optimieren.'
 var answer1121 = ' Zum Beispiel? '
 
-var text1121 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Karteikarten zum Beispiel sind sehr effektiv, allerdings bleiben Zusammenhänge auf der Strecke. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Mit meinem Programmm kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. So kann man langfristig eine Wissensbasis aufbauen. ';
-var answer11211 = 'Cool. Lass uns in Persona einmal darüber sprechen. ';
+var text1121 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Dann kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen.  ';
+var answer11211 = 'Cool. Lass uns doch einmal persönlich darüber sprechen. ';
 
 var text111 = 'Nun, ich gehe davon aus, dass du meinen Lebenslauf schon kennst. Warum soll ich also nochmal das Bekannte aufzählen. Vermutlich bist du hier, um zu sehen, ob ich 1. technisches etwas kann und 2. wie ich menschlich so bin. Dafür bietet sich dieser "Chatbot" an.';
 var answer1111 = 'Menschlich? Naja ob man das hier schon feststellen kann...';
@@ -23,7 +23,7 @@ var answer1112 = 'Was sind denn deine technischen Fähigkeiten?';
 var text1112 = 'Programmiersprachen sind für mich ein Werkzeug um meine Ideen umzusetzen. Für kleinere Skripte und mein "persönliches Wikipedia" habe ich mir etwa Python beigebracht.';
 var answer11122 = 'Was ist dieses "Persönliche Wikipedia"? ';
 
-var text11122 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Karteikarten zum Beispiel sind sehr effektiv, allerdings bleiben Zusammenhänge auf der Strecke. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Mit meinem Programmm kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. So kann man langfristig eine Wissensbasis aufbauen. ';
+var text11122 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Dann kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. ';
 var answer111221 = 'Cool. Lass uns doch einmal persönlich darüber sprechen. ';
 
 var text1111 = 'Wahrscheinlich nicht. Am besten wir lernen uns im persönlichen Gespräch einmal kennen ;)';
