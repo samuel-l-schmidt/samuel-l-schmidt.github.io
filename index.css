@@ -15,6 +15,7 @@ button{
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 300;
+  font-size: medium;
   color: gainsboro;
   text-align: center;
   transition: all 0.2s;   
@@ -57,8 +58,8 @@ button:hover{
 #text{
   position: absolute;
   top: 25%;
-  left: 15%;
-  margin-right: 15%;
+  left: 25%;
+  margin-right: 25%;
 }
 
 #particles-js{

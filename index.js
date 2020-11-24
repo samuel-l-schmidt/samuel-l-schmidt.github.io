@@ -1,37 +1,57 @@
 var text_count = 0;
 var speed = 30;
 var isRunning = true;
-var chat = [1]; /* Wir setzen den Chatverlauf als Zahlenfolge */
-var text1 = 'Ich weiß was du hier willst ... nämlich mehr über Samuel Schmidt erfahren, stimmts?';
-var answer11 = 'Genau !';
-var answer12 = 'Das war ja jetzt auch nicht wirklich schwer.';
+var chat = [1]; 
 
-var text11 = 'Freut mich! Die Faszination, wie Technologien Unternehmen und ganze Gesellschaften verändern können, führten zur Wirtschaftsinformatik. Aus eigenem Antrieb setzt er seine Ideen und Projekte um, zum Beispiel diese Website ;). Andere Interessen sind Politik und Biologie, außerdem spielt er gerne Tennis oder geht Inlineskaten.';
-var answer111 = 'Schön und gut. Aber was soll diese Website?';
-var answer112 = 'Wirtschaftsinformatik? Puhh';
+var text1 = 'I know what you want here ... learn more about Samuel Schmidt, right?';
+var answer11 = 'Right!';
+var answer12 = 'That was not really hard to guess...';
 
-var text112 = 'Ich finde neue Technologien einfach faszinierend. Außerdem macht es mir Spaß Prozesse zu optimieren.'
-var answer1121 = ' Zum Beispiel? '
+var text11 = 'Nice! The fascination of how technologies can change companies and whole societies has led me to study business informatics. I implement my ideas and projects on my own initiative, for example this website ;)';
+var answer111 = 'Okay. But what is this website about?';
+var answer112 = 'Business Informatics? Phew';
 
-var text1121 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Dann kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen.  ';
-var answer11211 = 'Cool. Lass uns doch einmal persönlich darüber sprechen. ';
+var text112 = 'I am really interested in start up culture. I find new technologies simply fascinating.'
+var answer1121 = ' For example? '
 
-var text111 = 'Nun, ich gehe davon aus, dass du meinen Lebenslauf schon kennst. Warum soll ich also nochmal das Bekannte aufzählen. Vermutlich bist du hier, um zu sehen, ob ich 1. technisches etwas kann und 2. wie ich menschlich so bin. Dafür bietet sich dieser "Chatbot" an.';
-var answer1111 = 'Menschlich? Naja ob man das hier schon feststellen kann...';
-var answer1112 = 'Was sind denn deine technischen Fähigkeiten?';
+var text1121 = 'I spend a lot of time on how to optimise my learning process. My programme is based on the idea of dividing all knowledge into concepts. A concept can be a dog as well as Test Driven Development. Then I can learn these concepts as with index cards and at the same time show connections.  ';
+var answer11211 = 'Cool. Let us talk about this in person. ';
 
-var text1112 = 'Programmiersprachen sind für mich ein Werkzeug um meine Ideen umzusetzen. Für kleinere Skripte und mein "persönliches Wikipedia" habe ich mir etwa Python beigebracht.';
-var answer11122 = 'Was ist dieses "Persönliche Wikipedia"? ';
+var text111 = 'Well, I assume you already know my resume. So why should I enumerate the known again. I suppose you are here to see if I can do 1. something technical and 2. see what I am like. That is what this website is for.';
+var answer1111 = 'Well and you think it is possible to understand what you are like with this "chatbot"?';
+var answer1112 = 'So...what are your technical abilities?';
 
-var text11122 = 'Ich beschäftige mich viel damit, wie ich meinen Lernprozess optimieren kann. Mein Programmm, baut auf der Idee auf, alles Wissen in Konzepte zu unterteilen. Ein Konzept kann ein Hund genauso wie Test Driven Development sein. Dann kann ich diese Konzepte wie mit Karteikarten lernen und gleichzeitig Verbindungen darstellen. ';
-var answer111221 = 'Cool. Lass uns doch einmal persönlich darüber sprechen. ';
+var text1112 = 'Programming languages are for me a tool to realise my ideas. For example, for smaller scripts and my "personal Wikipedia" I taught myself Python';
+var answer11122 = 'What is this "personal Wikipedia"? ';
 
-var text1111 = 'Wahrscheinlich nicht. Am besten wir lernen uns im persönlichen Gespräch einmal kennen ;)';
+var text11122 = 'I spend a lot of time on how I can optimise my learning process. My programme is based on the idea of dividing all knowledge into concepts. A concept can be a dog as well as Test Driven Development. Then I can learn these concepts as with index cards and visualize connections. ';
+var answer111221 = 'Cool. Let us talk about this in person. ';
 
-var text12 = 'Stimmt. Viele Antwortmöglichkeiten hattest du ja auch nicht ';
+var text1111 = 'Probably not. It would be way easier to speak in person... ';
+
+var answer112 = 'Business Informatics? Phew';
+
+var text112 = 'I am really interested in start up culture and find new technologies simply fascinating. I also try to constantly optimise my workflow.'
+var answer1121 = ' For example? '
+
+var text1121 = 'I spend a lot of time on how to optimise my learning process. My programme is based on the idea of dividing all knowledge into concepts. A concept can be a dog as well as Test Driven Development. Then I can learn these concepts as with index cards and at the same time show connections.  ';
+var answer11211 = 'Cool. Let us talk about this in person. ';
+
+var text111 = 'Well, I assume you already know my resume. So why should I enumerate the known again. I suppose you are here to see if I can do 1. something technical and 2. how I am human. That is what this "chatbot" is for.';
+var answer1111 = 'Human? Well, if you can already determine that here...';
+var answer1112 = 'What are your technical abilities?';
+
+var text1112 = 'Programming languages are for me a tool to realise my ideas. For example, for smaller scripts and my "personal Wikipedia" I taught myself Python';
+var answer11122 = 'What is this "personal Wikipedia"? ';
+
+var text11122 = 'I spend a lot of time on how I can optimise my learning process. My programme is based on the idea of dividing all knowledge into concepts. A concept can be a dog as well as Test Driven Development. Then I can learn these concepts as with index cards and at the same time show connections. ';
+var answer111221 = 'Cool. Let us talk about this in person. ';
+
+var text1111 = 'Probably not. After all the best option is to get to know each other in a personal conversation ;)';
+var text12 = 'Right. You did not have many options for answers either ';
 var answer121 = 'Haha...';
 
-var text121 = 'Vieleicht wäre es besser, wenn wir uns persönlich kennenlernen.';
+var text121 = 'Perhaps it would be better if we got to know each other personally.';
 
 
 var TextWriter = function(text_count) {
