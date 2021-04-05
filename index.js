@@ -3,7 +3,7 @@ var speed = 30;
 var isRunning = true;
 var chat = [1]; 
 
-var text1 = 'I know what you want here ... learn more about Samuel Schmidt, right?';
+var text1 = 'I know what you want ... learn more about Samuel Schmidt, right?';
 var answer11 = 'Right!';
 var answer12 = 'That was not really hard to guess...';
 
